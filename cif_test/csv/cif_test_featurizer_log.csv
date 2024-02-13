@@ -1,2 +1,9 @@
-Filename,CIF,Compound,Number of atoms,Execution time (s),Total_time (s)
-AlSb.cif,458053,Al0.5Sb0.5,266,1.802,1.802
+Filename,CIF,Compound,Number of atoms,Execution time (s)
+250141.cif,250141,ThRu,148,1.266
+HoPt.cif,2030011,HoPt,152,1.326
+RhSb2.cif,457859,RhSb2,180,1.72
+AlSb.cif,458053,Al0.5Sb0.5,266,2.845
+Al3Ni.cif,1601445,NiAl3,272,3.238
+ThOs2.cif,250170,ThOs2,642,12.668
+250140.cif,250140,ThRu2,642,12.681
+Nd5Si3.cif,1720931,Nd5Si3,662,14.227

@@ -1,8 +1,15 @@
+import pandas as pd
+
 def get_radii_data():
     """
     Return a dictionary of element radii data.
     """
-    data = {
+    data = {}
+    cif_data = pd.read_excel("util/CIF_radius.xlsx", engine="openpyxl")
+    for i in range(len(cif_data)):
+        data[cif_data.iloc[i]['Symbol']] = [cif_data.iloc[i]['CIF_radius_element'], cif_data.iloc[i]['CIF_radius_element']]
+
+    """data = {
         'Si': [1.176, 1.316], 'Sc': [1.641, 1.620], 'Fe': [1.242, 1.260],
         'Co': [1.250, 1.252], 'Ni': [1.246, 1.244], 'Ga': [1.243, 1.408],
         'Ge': [1.225, 1.366], 'Y': [1.783, 1.797], 'Ru': [1.324, 1.336],
@@ -13,9 +20,8 @@ def get_radii_data():
         'Tb': [1.764, 1.773], 'Dy': [1.752, 1.770], 'Ho': [1.745, 1.761],
         'Er': [1.734, 1.748], 'Tm': [1.726, 1.743], 'Yb': [1.939, 1.933],
         'Lu': [1.718, 1.738], 'Os': [1.337, 1.350], 'Ir': [1.356, 1.355],
-        'Pt': [1.387, 1.385], 'Th': [1.798, 1.795], 'U': [1.377, 1.51],
-        'Al': [1.310, 1.310]
-    }
+        'Pt': [1.387, 1.385], 'Th': [1.798, 1.795], 'U': [1.377, 1.51]
+    }"""
 
     radii_data = {k: {'CIF_radius_element': v[0], 'Pauling_R(CN12)': v[1]} for k, v in data.items()}
     

@@ -1,6 +1,6 @@
 ##############################################################################
 #                                                                            #
-# Al-Sb            # AlSb hp                                       #  458053 #
+# Nd-Si            # Nd5Si3 tet                                    # 1720931 #
 #                                                                            #
 ##############################################################################
 #                                                                            #
@@ -14,102 +14,103 @@
 #                   All rights reserved. Version 2022.07                     #
 #                                                                            #
 #   This copy of Pearson's Crystal Data is licensed to:                      #
-#   Indian Institute of Technology Kharagpur, Periodical Section, Central Library, Academic Site License         #
+#   University of Alberta, Chemistry Department, 1-5 Installations License         #
 #                                                                            #
 ##############################################################################
 
-data_458053
-_audit_creation_date                     2024-01-04
+data_1720931
+_audit_creation_date                     2023-07-06
 _audit_creation_method
 ;
 Pearson's Crystal Data browser
 ;
-#_database_code_PCD                      458053
-_database_code_PDF                       04-003-6679
+#_database_code_PCD                      1720931
+_database_code_PDF                       ?
 
 # Entry summary
 
-_chemical_formula_structural             'Al~0.5~ Sb~0.5~'
-_chemical_formula_sum                    'Al0.50 Sb0.50'
+_chemical_formula_structural             'Nd~5~ Si~3~'
+_chemical_formula_sum                    'Nd5 Si3'
 _chemical_name_mineral                   ?
 _chemical_compound_source                ?
-_chemical_name_structure_type            Sn,tI4,141
-_chemical_formula_weight                 74.4
+_chemical_name_structure_type            Cr~5~B~3~,tI32,140
+_chemical_formula_weight                 805.5
 
 # Bibliographic data
 
 _publ_section_title
-;
-Crystal Structures at High Pressures of Metallic Modifications of Compounds of Indium, Gallium, and Aluminum
-;
-_journal_coden_ASTM                      SCIEAS
-_journal_name_full                       'Science (Washington, DC, U. S.)'
-_journal_year                            1963
-_journal_volume                          139
-_journal_page_first                      845
-_journal_page_last                       847
+'Isothermal section of Nd-Zr-Si ternary system at 773 K'                      
+_journal_coden_ASTM                      JREAE6
+_journal_name_full                       'J. Rare Earths'
+_journal_year                            2012
+_journal_volume                          30
+_journal_page_first                      79
+_journal_page_last                       83
 _journal_language                        English
 loop_
  _publ_author_name
  _publ_author_address
-'Jamieson J.C.'
+'He J.'
 ;
-Chicago University
-Department of Geophysical Sciences
-Chicago
-U.S.A. Illinois
+Guangxi University
+Key Laboratory of Nonferrous Metal Materials and New Processing Technology
+Nanning / Guangxi
+China
 ;
 # Standardized crystallographic data
 
-_cell_length_a                           5.375
-_cell_length_b                           5.375
-_cell_length_c                           2.892
+_cell_length_a                           7.7924
+_cell_length_b                           7.7924
+_cell_length_c                           13.748
 _cell_angle_alpha                        90
 _cell_angle_beta                         90
 _cell_angle_gamma                        90
-_cell_volume                             83.55
+_cell_volume                             834.8
 _cell_formula_units_Z                    4
-_space_group_IT_number                   141
-_space_group_name_H-M_alt                'I 41/a m d (origin choice 2)'
+_space_group_IT_number                   140
+_space_group_name_H-M_alt                'I 4/m c m'
 loop_
  _space_group_symop_id
  _space_group_symop_operation_xyz
  1 'x, y, z'
- 2 '-x, 1/2-y, z'
- 3 '-x, -y, -z'
- 4 '-x, 1/2+y, -z'
- 5 '-x, y, z'
- 6 '1/4-y, 1/4-x, -1/4-z'
- 7 '1/4-y, -1/4+x, 1/4+z'
- 8 '-1/4-y, 1/4-x, -1/4+z'
- 9 '-1/4-y, -1/4+x, 1/4-z'
- 10 'x, 1/2-y, z'
- 11 'x, -y, -z'
- 12 'x, 1/2+y, -z'
- 13 '1/4+y, 1/4-x, -1/4+z'
- 14 '1/4+y, -1/4+x, 1/4-z'
- 15 '-1/4+y, 1/4-x, -1/4-z'
- 16 '-1/4+y, -1/4+x, 1/4+z'
+ 2 '-x, -y, -z'
+ 3 '-x, -y, z'
+ 4 '-x, y, 1/2-z'
+ 5 '-x, y, 1/2+z'
+ 6 '-y, -x, 1/2-z'
+ 7 '-y, -x, 1/2+z'
+ 8 '-y, x, -z'
+ 9 '-y, x, z'
+ 10 'x, -y, 1/2-z'
+ 11 'x, -y, 1/2+z'
+ 12 'x, y, -z'
+ 13 'y, -x, -z'
+ 14 'y, -x, z'
+ 15 'y, x, 1/2-z'
+ 16 'y, x, 1/2+z'
  17 '1/2+x, 1/2+y, 1/2+z'
- 18 '1/2-x, 1-y, 1/2+z'
- 19 '1/2-x, 1/2-y, 1/2-z'
- 20 '1/2-x, 1+y, 1/2-z'
- 21 '1/2-x, 1/2+y, 1/2+z'
- 22 '3/4-y, 3/4-x, 1/4-z'
- 23 '3/4-y, 1/4+x, 3/4+z'
- 24 '1/4-y, 3/4-x, 1/4+z'
- 25 '1/4-y, 1/4+x, 3/4-z'
- 26 '1/2+x, 1-y, 1/2+z'
- 27 '1/2+x, 1/2-y, 1/2-z'
- 28 '1/2+x, 1+y, 1/2-z'
- 29 '3/4+y, 3/4-x, 1/4+z'
- 30 '3/4+y, 1/4+x, 3/4-z'
- 31 '1/4+y, 3/4-x, 1/4-z'
- 32 '1/4+y, 1/4+x, 3/4+z'
+ 18 '1/2-x, 1/2-y, 1/2-z'
+ 19 '1/2-x, 1/2-y, 1/2+z'
+ 20 '1/2-x, 1/2+y, 1-z'
+ 21 '1/2-x, 1/2+y, 1+z'
+ 22 '1/2-y, 1/2-x, 1-z'
+ 23 '1/2-y, 1/2-x, 1+z'
+ 24 '1/2-y, 1/2+x, 1/2-z'
+ 25 '1/2-y, 1/2+x, 1/2+z'
+ 26 '1/2+x, 1/2-y, 1-z'
+ 27 '1/2+x, 1/2-y, 1+z'
+ 28 '1/2+x, 1/2+y, 1/2-z'
+ 29 '1/2+y, 1/2-x, 1/2-z'
+ 30 '1/2+y, 1/2-x, 1/2+z'
+ 31 '1/2+y, 1/2+x, 1-z'
+ 32 '1/2+y, 1/2+x, 1+z'
+
+# Atomic positions taken from type-defining entry
+
 loop_
  _atom_type_symbol
- Al
- Sb
+ Nd
+ Si
 loop_
  _atom_site_label
  _atom_site_type_symbol
@@ -119,31 +120,30 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
- Al1 Al 4 b 0 0.25 0.375 0.5
- Sb1 Sb 4 b 0 0.25 0.375 0.5
+ Nd1 Nd 16 l 0.166 0.666 0.15 1
+ Si1 Si 8 h 0.625 0.125 0 1
+ Nd2 Nd 4 c 0 0 0 1
+ Si2 Si 4 a 0 0 0.25 1
 
 
 _exptl_crystal_colour                    ?
 _exptl_crystal_density_meas              ?
-_exptl_crystal_density_diffrn            5.91
+_exptl_crystal_density_diffrn            6.41
 _cell_measurement_temperature            ?
-_cell_measurement_radiation              X-rays
+_cell_measurement_radiation              'X-rays, Cu Ka'
 _cell_measurement_reflns_used            ?
 _diffrn_ambient_temperature              ?
-_diffrn_measurement_device               film
+_diffrn_measurement_device               'automatic diffractometer'
 _diffrn_measurement_device_type          ?
-_diffrn_radiation_type                   X-rays
+_diffrn_radiation_type                   ?
 _diffrn_reflns_number                    ?
 _exptl_absorpt_coefficient_mu            ?
 _exptl_absorpt_correction_type           ?
-_computing_structure_solution            'starting values from the literature'
+_computing_structure_solution            ?
 _refine_ls_number_parameters             ?
 _refine_ls_number_reflns                 ?
 _refine_ls_R_factor_gt                   ?
 _refine_ls_wR_factor_gt                  ?
-_pd_proc_ls_proof_R_factor               ?
-_pd_proc_ls_proof_wR_factor              ?
-_refine_ls_R_I_factor                    ?
 
-# End of data set 458053
+# End of data set 1720931
 

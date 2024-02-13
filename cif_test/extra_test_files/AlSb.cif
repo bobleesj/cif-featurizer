@@ -59,6 +59,8 @@ Department of Geophysical Sciences
 Chicago
 U.S.A. Illinois
 ;
+
+
 # Standardized crystallographic data
 
 _cell_length_a                           5.375
@@ -119,8 +121,8 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
- Al1 Al 4 b 0 0.25 0.375 0.5
- Sb1 Sb 4 b 0 0.25 0.375 0.5
+Al1 Al 4 b 0 0.25 0.375 0.5
+Sb1 Sb 4 b 0 0.25 0.375 0.5
 
 
 _exptl_crystal_colour                    ?

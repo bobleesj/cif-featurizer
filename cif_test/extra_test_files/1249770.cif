@@ -1,6 +1,6 @@
 ##############################################################################
 #                                                                            #
-# Al-Sb            # AlSb hp                                       #  458053 #
+# Cu-Pt            # Cu3.2Pt0.8 rt                                 # 1249770 #
 #                                                                            #
 ##############################################################################
 #                                                                            #
@@ -18,98 +18,114 @@
 #                                                                            #
 ##############################################################################
 
-data_458053
-_audit_creation_date                     2024-01-04
+data_1249770
+_audit_creation_date                     2024-01-07
 _audit_creation_method
 ;
 Pearson's Crystal Data browser
 ;
-#_database_code_PCD                      458053
-_database_code_PDF                       04-003-6679
+#_database_code_PCD                      1249770
+_database_code_PDF                       ?
 
 # Entry summary
 
-_chemical_formula_structural             'Al~0.5~ Sb~0.5~'
-_chemical_formula_sum                    'Al0.50 Sb0.50'
-_chemical_name_mineral                   ?
-_chemical_compound_source                ?
-_chemical_name_structure_type            Sn,tI4,141
-_chemical_formula_weight                 74.4
+_chemical_formula_structural             'Cu~3~ Pt'
+_chemical_formula_sum                    'Cu3 Pt'
+_chemical_name_mineral                   tomamaeite
+_chemical_compound_source                'Japan, Hokkaido Prefecture, Tomamae'
+_chemical_name_structure_type            Cu~3~Au,cP4,221
+_chemical_formula_weight                 385.7
 
 # Bibliographic data
 
 _publ_section_title
-;
-Crystal Structures at High Pressures of Metallic Modifications of Compounds of Indium, Gallium, and Aluminum
-;
-_journal_coden_ASTM                      SCIEAS
-_journal_name_full                       'Science (Washington, DC, U. S.)'
-_journal_year                            1963
-_journal_volume                          139
-_journal_page_first                      845
-_journal_page_last                       847
+'Tomamaeite, IMA 2019-129. CNMNC Newsletter No. 55, June 2020'                
+_journal_coden_ASTM                      MNLMBB
+_journal_name_full                       'Mineral. Mag.'
+_journal_year                            2020
+_journal_volume                          84
+_journal_page_first                      485
+_journal_page_last                       486
 _journal_language                        English
 loop_
  _publ_author_name
  _publ_author_address
-'Jamieson J.C.'
+'Nishio Hamane D.'
 ;
-Chicago University
-Department of Geophysical Sciences
-Chicago
-U.S.A. Illinois
+Tokyo University
+Institute for Solid State Physics (ISSP)
+Kashiwa / Chiba
+Japan
 ;
+
+
 # Standardized crystallographic data
 
-_cell_length_a                           5.375
-_cell_length_b                           5.375
-_cell_length_c                           2.892
+_cell_length_a                           3.683
+_cell_length_b                           3.683
+_cell_length_c                           3.683
 _cell_angle_alpha                        90
 _cell_angle_beta                         90
 _cell_angle_gamma                        90
-_cell_volume                             83.55
-_cell_formula_units_Z                    4
-_space_group_IT_number                   141
-_space_group_name_H-M_alt                'I 41/a m d (origin choice 2)'
+_cell_volume                             50
+_cell_formula_units_Z                    1
+_space_group_IT_number                   221
+_space_group_name_H-M_alt                'P m -3 m'
 loop_
  _space_group_symop_id
  _space_group_symop_operation_xyz
  1 'x, y, z'
- 2 '-x, 1/2-y, z'
- 3 '-x, -y, -z'
- 4 '-x, 1/2+y, -z'
- 5 '-x, y, z'
- 6 '1/4-y, 1/4-x, -1/4-z'
- 7 '1/4-y, -1/4+x, 1/4+z'
- 8 '-1/4-y, 1/4-x, -1/4+z'
- 9 '-1/4-y, -1/4+x, 1/4-z'
- 10 'x, 1/2-y, z'
- 11 'x, -y, -z'
- 12 'x, 1/2+y, -z'
- 13 '1/4+y, 1/4-x, -1/4+z'
- 14 '1/4+y, -1/4+x, 1/4-z'
- 15 '-1/4+y, 1/4-x, -1/4-z'
- 16 '-1/4+y, -1/4+x, 1/4+z'
- 17 '1/2+x, 1/2+y, 1/2+z'
- 18 '1/2-x, 1-y, 1/2+z'
- 19 '1/2-x, 1/2-y, 1/2-z'
- 20 '1/2-x, 1+y, 1/2-z'
- 21 '1/2-x, 1/2+y, 1/2+z'
- 22 '3/4-y, 3/4-x, 1/4-z'
- 23 '3/4-y, 1/4+x, 3/4+z'
- 24 '1/4-y, 3/4-x, 1/4+z'
- 25 '1/4-y, 1/4+x, 3/4-z'
- 26 '1/2+x, 1-y, 1/2+z'
- 27 '1/2+x, 1/2-y, 1/2-z'
- 28 '1/2+x, 1+y, 1/2-z'
- 29 '3/4+y, 3/4-x, 1/4+z'
- 30 '3/4+y, 1/4+x, 3/4-z'
- 31 '1/4+y, 3/4-x, 1/4-z'
- 32 '1/4+y, 1/4+x, 3/4+z'
+ 2 '-x, -y, -z'
+ 3 '-x, -y, z'
+ 4 '-x, -z, -y'
+ 5 '-x, -z, y'
+ 6 '-x, y, -z'
+ 7 '-x, y, z'
+ 8 '-x, z, -y'
+ 9 '-x, z, y'
+ 10 '-y, -x, -z'
+ 11 '-y, -x, z'
+ 12 '-y, -z, -x'
+ 13 '-y, -z, x'
+ 14 '-y, x, -z'
+ 15 '-y, x, z'
+ 16 '-y, z, -x'
+ 17 '-y, z, x'
+ 18 '-z, -x, -y'
+ 19 '-z, -x, y'
+ 20 '-z, -y, -x'
+ 21 '-z, -y, x'
+ 22 '-z, x, -y'
+ 23 '-z, x, y'
+ 24 '-z, y, -x'
+ 25 '-z, y, x'
+ 26 'x, -y, -z'
+ 27 'x, -y, z'
+ 28 'x, -z, -y'
+ 29 'x, -z, y'
+ 30 'x, y, -z'
+ 31 'x, z, -y'
+ 32 'x, z, y'
+ 33 'y, -x, -z'
+ 34 'y, -x, z'
+ 35 'y, -z, -x'
+ 36 'y, -z, x'
+ 37 'y, x, -z'
+ 38 'y, x, z'
+ 39 'y, z, -x'
+ 40 'y, z, x'
+ 41 'z, -x, -y'
+ 42 'z, -x, y'
+ 43 'z, -y, -x'
+ 44 'z, -y, x'
+ 45 'z, x, -y'
+ 46 'z, x, y'
+ 47 'z, y, -x'
+ 48 'z, y, x'
 loop_
  _atom_type_symbol
- Al
- Sb
+ Cu
+ Pt
 loop_
  _atom_site_label
  _atom_site_type_symbol
@@ -119,31 +135,28 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
- Al1 Al 4 b 0 0.25 0.375 0.5
- Sb1 Sb 4 b 0 0.25 0.375 0.5
+Cu1 Cu 3 c 0 0.5 0.5 1
+Pt1 Pt 1 a 0 0 0 1
 
 
 _exptl_crystal_colour                    ?
 _exptl_crystal_density_meas              ?
-_exptl_crystal_density_diffrn            5.91
+_exptl_crystal_density_diffrn            12.82
 _cell_measurement_temperature            ?
-_cell_measurement_radiation              X-rays
+_cell_measurement_radiation              ?
 _cell_measurement_reflns_used            ?
 _diffrn_ambient_temperature              ?
-_diffrn_measurement_device               film
+_diffrn_measurement_device               ?
 _diffrn_measurement_device_type          ?
-_diffrn_radiation_type                   X-rays
+_diffrn_radiation_type                   ?
 _diffrn_reflns_number                    ?
 _exptl_absorpt_coefficient_mu            ?
 _exptl_absorpt_correction_type           ?
-_computing_structure_solution            'starting values from the literature'
+_computing_structure_solution            ?
 _refine_ls_number_parameters             ?
 _refine_ls_number_reflns                 ?
 _refine_ls_R_factor_gt                   ?
 _refine_ls_wR_factor_gt                  ?
-_pd_proc_ls_proof_R_factor               ?
-_pd_proc_ls_proof_wR_factor              ?
-_refine_ls_R_I_factor                    ?
 
-# End of data set 458053
+# End of data set 1249770
 

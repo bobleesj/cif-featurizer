@@ -4,8 +4,8 @@ from collections import Counter
 from scipy.spatial import ConvexHull
 import pandas as pd
 from featurizer.polyhedron import *
-import featurizer.coordinate_number_dataframe as cn_dataframe
-import preprocess.supercell as supercell
+from featurizer import coordinate_number_dataframe as cn_dataframe
+from preprocess import supercell as supercell
 
 def update_difference_lists(dist, dist_sums, prev_dist_sums, diff_lists, first_iteration):
     """
@@ -220,12 +220,12 @@ def process_labels(label, atom_pair_info_dict, counts, cell_lengths, cell_angles
             except:
                 print(f"\nError in determining polyhedron for {central_atom_label}.\n")
                 continue
+
             polyhedron_points = np.array(polyhedron_points)
             polyhedron_metrics = compute_polyhedron_metrics(polyhedron_points, central_atom_coord, hull)
 
             df = cn_dataframe.get_coordniate_number_df(polyhedron_metrics, atom_counts, atoms, formula_string, label, dist_type, CIF_id)
             dfs.append(df)
-    
     if not dfs == []:
         return pd.concat(dfs, ignore_index=True).round(5)
 

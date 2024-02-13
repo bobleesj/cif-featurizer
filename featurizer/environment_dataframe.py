@@ -120,9 +120,10 @@ def get_env_binary_df(
 
 
     log.print_json_pretty("atomic_environment_binary_data", atomic_environment_binary_data)
-    df = pd.DataFrame(atomic_environment_binary_data)     
-    atomic_environment_binary_df = pd.concat([atomic_environment_binary_df, df], ignore_index=True)
-    atomic_environment_binary_df = atomic_environment_binary_df.round(5)
+    df = pd.DataFrame(atomic_environment_binary_data)
+    atomic_environment_binary_df = df.round(5)
+    # atomic_environment_binary_df = pd.concat([atomic_environment_binary_df, df], ignore_index=True)
+    # atomic_environment_binary_df = atomic_environment_binary_df.round(5)
 
     return atomic_environment_binary_df
 
@@ -291,8 +292,9 @@ def get_env_ternary_df(
     
     # Create DataFrame
     df = pd.DataFrame(atomic_environment_ternary_data)
-    atomic_env_ternary_df = pd.concat([atomic_env_ternary_df, df], ignore_index=True)
-    atomic_env_ternary_df = atomic_env_ternary_df.round(5)
+    atomic_env_ternary_df = df.round(5)
+    # atomic_env_ternary_df = pd.concat([atomic_env_ternary_df, df], ignore_index=True)
+    # atomic_env_ternary_df = atomic_env_ternary_df.round(5)
     log.print_json_pretty("atomic_environment_ternary_data", atomic_environment_ternary_data)
 
     return atomic_env_ternary_df

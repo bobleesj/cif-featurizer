@@ -260,11 +260,7 @@ def get_second_shortest_dist_count(
     avg_second_shortest_dist_count_res = (R_avg_second_shortest_dist_count, M_avg_second_shortest_dist_count, X_avg_second_shortest_dist_count)
 
     return second_shortest_dist_count_res, avg_second_shortest_dist_count_res
-
-
-
-
-
+    
 
 # 9th, 10th ternary features - homoatomic shortest distance / shortest distance
 def get_homoatomic_dist_by_shortest_dist_countd(

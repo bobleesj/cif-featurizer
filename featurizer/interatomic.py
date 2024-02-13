@@ -5,16 +5,16 @@ import pandas as pd
 import time
 import math
 from click import style
-import util.data as data
-import preprocess.optimize as optimize
-import featurizer.distance as distance
-import preprocess.cif_parser as cif_parser
-import featurizer.coordinate_number as cn_featurizer
-import featurizer.interatomic as interatomic_featurizer
-import util.folder as folder
-import preprocess.supercell as supercell
-import util.unitcell as unitcell
-import util.log as log
+from util import data as data
+from preprocess import optimize as optimize
+from featurizer import distance as distance
+from preprocess import cif_parser as cif_parser
+from featurizer import coordinate_number as cn_featurizer
+from featurizer import interatomic as interatomic_featurizer
+from util import folder as folder
+from preprocess import supercell as supercell
+from util import unitcell as unitcell
+from util import log as log
 
 
 def get_interatomic_binary_df(filename,
@@ -112,8 +112,10 @@ def get_interatomic_binary_df(filename,
 
 
     df = pd.DataFrame(interatomic_binary_data)
-    interatomic_binary_df = pd.concat([interatomic_binary_df, df], ignore_index=True)
-    interatomic_binary_df = interatomic_binary_df.round(5)
+    interatomic_binary_df = df.round(5)
+    # interatomic_binary_df = pd.concat([interatomic_binary_df, df], ignore_index=True)
+    # interatomic_binary_df = interatomic_binary_df.round(5)
+    
 
     # log.print_json_pretty("interatomic_binary_data", interatomic_binary_data)
     
@@ -155,8 +157,9 @@ def get_interatomic_binary_df(filename,
     }
 
     df = pd.DataFrame(interatomic_universal_data)
-    interatomic_universal_df = pd.concat([interatomic_universal_df, df], ignore_index=True)
-    interatomic_universal_df = interatomic_universal_df.round(5)
+    interatomic_universal_df = df.round(5)
+    # interatomic_universal_df = pd.concat([interatomic_universal_df, df], ignore_index=True)
+    # interatomic_universal_df = interatomic_universal_df.round(5)
 
     return interatomic_binary_df, interatomic_universal_df
 
@@ -289,8 +292,9 @@ def get_interatomic_ternary_df(filename,
     }
 
     df = pd.DataFrame(interatomic_ternary_data)
-    interatomic_ternary_df = pd.concat([interatomic_ternary_df, df], ignore_index=True)
-    interatomic_ternary_df = interatomic_ternary_df.round(5)
+    interatomic_ternary_df = df.round(5)
+    # interatomic_ternary_df = pd.concat([interatomic_ternary_df, df], ignore_index=True)
+    # interatomic_ternary_df = interatomic_ternary_df.round(5)
 
 
     # Get the shortest homo/hetroatomic distance
@@ -339,7 +343,8 @@ def get_interatomic_ternary_df(filename,
 
     # log.print_json_pretty("interatomic_universal_data", interatomic_universal_data)
     df = pd.DataFrame(interatomic_universal_data)
-    interatomic_universal_df = pd.concat([interatomic_universal_df, df], ignore_index=True)
-    interatomic_universal_df = interatomic_universal_df.round(5)
+    interatomic_universal_df = df.round(5)
+    # interatomic_universal_df = pd.concat([interatomic_universal_df, df], ignore_index=True)
+    # interatomic_universal_df = interatomic_universal_df.round(5)
 
     return interatomic_ternary_df, interatomic_universal_df

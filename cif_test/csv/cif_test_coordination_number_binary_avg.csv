@@ -1,3 +1,9 @@
 CIF_id,Compound,Central atom,Coordination number,A atom count in CN,B atom count in CN,Volume of polyhedron,Distance from central atom to center of mass,Number of edges,Number of faces,Shortest distance to center of any face,Shortest distance to center of any edge,Volume of the inscribed sphere,Packing efficiency of inscribed sphere in polyhedron
-458053,Al0.5Sb0.5,Al1,12.0,6.0,6.0,27.8506,0.0,12.0,8.0,1.592,1.7268,16.8997,0.6068
+1601445,NiAl3,Ni1,9.0,0.0,9.0,30.0018,0.1759,21.0,14.0,1.6155,1.5518,17.6597,0.5886
+1720931,Nd5Si3,Si2,10.0,10.0,0.0,75.8866,0.0,24.0,16.0,2.3781,2.4726,56.3362,0.7424
+2030011,HoPt,Ho1,14.0,7.0,7.0,91.2829,0.1074,36.0,24.0,2.0364,1.9968,35.3716,0.3935
+250140,ThRu2,Th1,16.0,4.0,12.0,95.8647,0.0,42.0,28.0,2.7072,2.8312,83.105,0.8669
+250141,ThRu,Th1,14.5,7.5,7.0,103.7648,0.1706,37.5,25.0,2.4351,2.4449,68.4232,0.6134
+250170,ThOs2,Th1,16.0,4.0,12.0,98.0597,0.0,42.0,28.0,2.7277,2.8526,85.0078,0.8669
+457859,RhSb2,Sb2,10.75,3.0,7.75,66.8375,0.3342,24.0,16.0,1.6308,1.8429,22.9999,0.3053
 458053,Al0.5Sb0.5,Sb1,12.0,6.0,6.0,27.8506,0.0,12.0,8.0,1.592,1.7268,16.8997,0.6068

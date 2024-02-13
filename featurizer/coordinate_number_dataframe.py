@@ -1,9 +1,9 @@
 import pandas as pd
-import featurizer.distance as distance
-import preprocess.optimize as optimize
-import util.data as db
-import preprocess.cif_parser as cif_parser
-import featurizer.coordinate_number as cn_featurizer
+from featurizer import distance as distance
+from preprocess import optimize as optimize
+from util import data as db
+from preprocess import cif_parser as cif_parser
+from featurizer import coordinate_number as cn_featurizer
 import os
 import time
 
@@ -40,11 +40,10 @@ def get_coordinate_number_binary_df(isBinary,
 
     for label in unique_labels:
         df = cn_featurizer.process_labels(label, atom_pair_info_dict, CN_counts, cell_lengths, cell_angles_rad, atom_labels, rad_sum_binary, CIF_id, formula_string)
-        coordinate_number_binary_df = pd.concat([coordinate_number_binary_df, df], ignore_index=True)
+        coordinate_number_binary_df = df.round(5)
+        # coordinate_number_binary_df = pd.concat([coordinate_number_binary_df, df], ignore_index=True)
     
     return coordinate_number_binary_df
-
-
 
 
 def get_coordinate_number_ternary_df(isBinary,
@@ -90,8 +89,9 @@ def get_coordinate_number_ternary_df(isBinary,
 
     for label in unique_labels:
         df = cn_featurizer.process_labels(label, atom_pair_info_dict, CN_counts, cell_lengths, cell_angles_rad, atom_labels, rad_sum_ternary, CIF_id, formula_string, isTernary=True)
-        coordinate_number_ternary_df = pd.concat([coordinate_number_ternary_df, df], ignore_index=True)
-        coordinate_number_ternary_df = coordinate_number_ternary_df.round(5)
+        coordinate_number_ternary_df = df.round(5)
+        # coordinate_number_ternary_df = pd.concat([coordinate_number_ternary_df, df], ignore_index=True)
+        # coordinate_number_ternary_df = coordinate_number_ternary_df.round(5)
 
     return coordinate_number_ternary_df
 
@@ -146,7 +146,6 @@ def update_log_dataframe(log_df, CIF_id, filename, formula_string, all_points, e
     return log_df, log_data
 
 
-
 def calculate_execution_time(start_time, running_total_time):
     """
     Calculatse execution time based on the provided start time and update the running total time.
@@ -156,4 +155,5 @@ def calculate_execution_time(start_time, running_total_time):
     running_total_time += execution_time
     
     return execution_time, running_total_time
+
 

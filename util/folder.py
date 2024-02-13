@@ -1,7 +1,7 @@
 import shutil
 import pandas as pd
 import os
-import util.folder as folder
+from util import folder as folder
 
 def choose_CIF_directory(script_directory):
     """

@@ -1,19 +1,21 @@
 import pandas as pd
-import util.data as data
-import preprocess.optimize as optimize
-import featurizer.distance as distance
-import featurizer.environment_wyckoff as env_wychoff_featurizer
+from util import data as data
+from preprocess import optimize as optimize
+from featurizer import distance as distance
+from featurizer import environment_wyckoff as env_wychoff_featurizer
 import numpy as np
-import util.log as log
+from util import log as log
 
 def get_atom_values(atom, xl):
     row = xl[xl.iloc[:, 0] == atom]
     return {
-        'CIF_rad': row['CIF radius element'].values[0],
-        'Pauling_rad': row['Pauling R(CN12)'].values[0],
+        #'CIF_rad': row['CIF radius element'].values[0],
+        'CIF_rad': data.get_radii_data()[atom]['CIF_radius_element'],
+        #'Pauling_rad': row['Pauling R(CN12)'].values[0],
+        'Pauling_rad': data.get_radii_data()[atom]['Pauling_R(CN12)'],
         'Group': row['Group'].values[0],
         'Mendeleev_number': row['Mendeleev number'].values[0],
-        'valence_e': row['valence e total'].values[0],
+        'valence_e': row['no. of valence electrons'].values[0],
         'Pauling_EN': row['Pauling EN'].values[0],
         'MB_EN': row['Martynov Batsanov EN'].values[0]
     }
@@ -148,8 +150,9 @@ def get_env_wychoff_binary_df(filename,
 
             
     df = pd.DataFrame(atomic_environment_binary_Wyckoff_data)
-    atomic_environment_wyckoff_binary_df = pd.concat([atomic_environment_wyckoff_binary_df, df], ignore_index=True)
-    atomic_environment_wyckoff_binary_df.round(5)
+    atomic_environment_wyckoff_binary_df = df.round(5)
+    # atomic_environment_wyckoff_binary_df = pd.concat([atomic_environment_wyckoff_binary_df, df], ignore_index=True)
+    # atomic_environment_wyckoff_binary_df.round(5)
     # log.print_json_pretty("atomic_environment_binary_Wyckoff_data", atomic_environment_binary_Wyckoff_data)
 
 
@@ -214,9 +217,10 @@ def get_env_wychoff_binary_df(filename,
     # Merge first_data and ordered_data
     merged_data = {**first_data, **ordered_data}
 
-    df = pd.DataFrame(merged_data)     
-    atomic_environment_wyckoff_universal_df = pd.concat([atomic_environment_wyckoff_universal_df, df], ignore_index=True)
-    atomic_environment_wyckoff_universal_df = atomic_environment_wyckoff_universal_df.round(5)
+    df = pd.DataFrame(merged_data)
+    atomic_environment_wyckoff_universal_df = df.round(5)
+    # atomic_environment_wyckoff_universal_df = pd.concat([atomic_environment_wyckoff_universal_df, df], ignore_index=True)
+    # atomic_environment_wyckoff_universal_df = atomic_environment_wyckoff_universal_df.round(5)
 
     # Loop through all columns and remove square brackets from lists
     for column in atomic_environment_wyckoff_binary_df.columns:
@@ -307,9 +311,10 @@ def get_env_wychoff_ternary_df(filename,
 
     
     df = pd.DataFrame(atomic_environment_Wyckoff_ternary_data)
-    atomic_environment_wyckoff_ternary_df = pd.concat([atomic_environment_wyckoff_ternary_df, df], ignore_index=True)
+    atomic_environment_wyckoff_ternary_df = df.round(5)
+    # atomic_environment_wyckoff_ternary_df = pd.concat([atomic_environment_wyckoff_ternary_df, df], ignore_index=True)
+    # atomic_environment_wyckoff_ternary_df.round(5)
     
-    atomic_environment_wyckoff_ternary_df.round(5)
     # log.print_json_pretty("atomic_environment_ternary_Wyckoff_data", atomic_environment_Wyckoff_ternary_data)
 
 
@@ -375,9 +380,10 @@ def get_env_wychoff_ternary_df(filename,
     # Merge first_data and ordered_data
     merged_data = {**first_data, **ordered_data}
 
-    df = pd.DataFrame(merged_data)     
-    atomic_environment_wyckoff_universal_df = pd.concat([atomic_environment_wyckoff_universal_df, df], ignore_index=True)
-    atomic_environment_wyckoff_universal_df = atomic_environment_wyckoff_universal_df.round(5)
+    df = pd.DataFrame(merged_data)
+    atomic_environment_wyckoff_universal_df = df.round(5)   
+    # atomic_environment_wyckoff_universal_df = pd.concat([atomic_environment_wyckoff_universal_df, df], ignore_index=True)
+    # atomic_environment_wyckoff_universal_df = atomic_environment_wyckoff_universal_df.round(5)
 
     # Loop through all columns and remove square brackets from lists
     for column in atomic_environment_wyckoff_ternary_df.columns:
